@@ -2,5 +2,6 @@
   "Culture": "en-US",
   "AppName": "COM-PortsReader",
   "Welcome": "COM-Port Manager - Введите 'help' для списка команд",
-  "Unknown command": "Unknown command"
+  "Unknown command": "Unknown command",
+  "Help": ""
 }

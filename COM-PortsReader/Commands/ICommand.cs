@@ -1,4 +1,4 @@
-﻿namespace COM_PortsReader;
+﻿namespace COM_PortsReader.Commands;
 
 internal interface ICommand
 {

@@ -1,4 +1,4 @@
-﻿using COM_PortsReader;
+﻿namespace COM_PortsReader.Commands;
 
 internal class ListPortsCommand : ICommand
 {

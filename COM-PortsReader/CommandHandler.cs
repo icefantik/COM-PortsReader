@@ -1,4 +1,6 @@
-﻿namespace COM_PortsReader;
+﻿using COM_PortsReader.Commands;
+
+namespace COM_PortsReader;
 
 internal class CommandHandler
 {
@@ -22,7 +24,7 @@ internal class CommandHandler
         }
         else
         {
-            Console.WriteLine();
+            Console.WriteLine(Localizer.GetString("Unknown command"));
         }
     }
 }
