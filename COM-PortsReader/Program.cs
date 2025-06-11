@@ -10,6 +10,8 @@ internal class Program
 
     private static string enterString = "> ";
 
+    public static void QuitTheProgram() => isRunning = false;
+
     private static void Main(string[] args)
     {
         var culture = new CultureInfo("en-US");
@@ -33,8 +35,8 @@ internal class Program
 
     private static void InitializeCommands()
     {
-        CommandHandler.RegisterCommand("list", new ListPortsCommand());
         CommandHandler.RegisterCommand("help", new HelpCommand());
-
+        CommandHandler.RegisterCommand("quit", new QuitCommand());
+        CommandHandler.RegisterCommand("list", new ListPortsCommand());
     }
 }

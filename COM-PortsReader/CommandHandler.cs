@@ -6,7 +6,7 @@ internal class CommandHandler
 {
     private static Dictionary<string, ICommand> commands = new Dictionary<string, ICommand>();
 
-    public static Dictionary<string, ICommand> GetCommand() => commands;
+    public static Dictionary<string, ICommand> GetCommands() => commands;
 
     public static void RegisterCommand(string name, ICommand command)
     {

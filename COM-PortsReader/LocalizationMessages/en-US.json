@@ -3,5 +3,7 @@
   "AppName": "COM-PortsReader",
   "Welcome": "COM-Port Manager - Введите 'help' для списка команд",
   "Unknown command": "Unknown command",
-  "Help": ""
+  "Description command help": "The help command outputs a description of all commands",
+  "Description command quit": "The command to exit the program",
+  "Description command list": "Displays a list of com ports on the device"
 }

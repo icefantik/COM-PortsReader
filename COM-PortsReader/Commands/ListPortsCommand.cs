@@ -2,7 +2,7 @@
 
 internal class ListPortsCommand : ICommand
 {
-    public string Description => "";
+    public string Description => Localizer.GetString("Description command list");
 
     public void Execute(string[] args)
     {

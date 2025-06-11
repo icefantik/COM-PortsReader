@@ -8,10 +8,14 @@ namespace COM_PortsReader.Commands;
 
 internal class HelpCommand : ICommand
 {
-    public string Description => "The help command outputs a description of all commands";
+    public string Description => Localizer.GetString("Description command help");
 
     public void Execute(string[] args)
     {
-        Console.WriteLine("qwerty");
+        var commands = CommandHandler.GetCommands();
+        foreach (var command in commands)
+        {
+            Console.WriteLine(command.Key + " - " + command.Value.Description);
+        }
     }
 }
