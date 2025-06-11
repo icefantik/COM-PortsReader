@@ -15,7 +15,7 @@ internal class HelpCommand : ICommand
         var commands = CommandHandler.GetCommands();
         foreach (var command in commands)
         {
-            Console.WriteLine(command.Key + " - " + command.Value.Description);
+            Console.WriteLine($"{command.Key} - {command.Value.Description}");
         }
     }
 }

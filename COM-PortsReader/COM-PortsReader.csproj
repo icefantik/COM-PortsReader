@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="LocalizationMessages\en-US.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

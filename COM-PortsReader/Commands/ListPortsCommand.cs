@@ -1,4 +1,6 @@
-﻿namespace COM_PortsReader.Commands;
+﻿using System.IO.Ports;
+
+namespace COM_PortsReader.Commands;
 
 internal class ListPortsCommand : ICommand
 {
@@ -6,6 +8,10 @@ internal class ListPortsCommand : ICommand
 
     public void Execute(string[] args)
     {
-        throw new NotImplementedException();
+        Console.WriteLine(Localizer.GetString("Available COM ports"));
+        foreach (var portName in SerialPort.GetPortNames())
+        {
+            Console.WriteLine($" - {portName}");
+        }
     }
 }

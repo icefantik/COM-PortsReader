@@ -16,7 +16,6 @@ internal class Program
     {
         var culture = new CultureInfo("en-US");
         CultureInfo.CurrentCulture = culture;
-        CultureInfo.CurrentCulture = culture;
 
         Localizer.Initialize(culture);
         
@@ -38,5 +37,6 @@ internal class Program
         CommandHandler.RegisterCommand("help", new HelpCommand());
         CommandHandler.RegisterCommand("quit", new QuitCommand());
         CommandHandler.RegisterCommand("list", new ListPortsCommand());
+        CommandHandler.RegisterCommand("select", new SelectPortCommand());
     }
 }
