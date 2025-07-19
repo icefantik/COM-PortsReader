@@ -6,5 +6,8 @@
   "Description command help": "The help command outputs a description of all commands",
   "Description command quit": "The command to exit the program",
   "Description command list": "Displays a list of com ports on the device",
+  "Description command select": "",
+  "Don't select com-port": "Don't select name com-port",
+  "Port don't find": "Port don't find",
   "Available COM ports": "Available COM ports:"
 }
