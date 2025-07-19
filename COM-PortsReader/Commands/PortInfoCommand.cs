@@ -16,6 +16,7 @@ internal class PortInfoCommand : ICommand
         Console.WriteLine(Localizer.GetString("State com-port") + (Program.selectedPort.IsOpen ? "Open" : "Close"));
         Console.WriteLine(Localizer.GetString("Settings") 
             + Program.selectedPort.BaudRate + Localizer.GetString("bot") 
+            + " "
             + Program.selectedPort.DataBits + Localizer.GetString("bit"));
     }
 }

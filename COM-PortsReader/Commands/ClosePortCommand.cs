@@ -19,7 +19,7 @@ internal class ClosePortCommand : ICommand
         }
         catch (Exception ex)
         {
-            Console.WriteLine(Localizer.GetString("Error"));
+            Console.WriteLine(Localizer.GetString("Error") + ex.Message);
         }
     }
 }

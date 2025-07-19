@@ -18,7 +18,7 @@ internal class SelectPortCommand : ICommand
         if (Array.Exists(SerialPort.GetPortNames(), p => p == portName))
         {
             Program.selectedPort = new SerialPort(portName);
-            Console.WriteLine(Localizer.GetString("Selected port"));
+            Console.WriteLine(Localizer.GetString("Selected port") + portName);
         }
         else
         {

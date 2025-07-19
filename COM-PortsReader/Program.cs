@@ -40,5 +40,10 @@ internal class Program
         CommandHandler.RegisterCommand("quit", new QuitCommand());
         CommandHandler.RegisterCommand("list", new ListPortsCommand());
         CommandHandler.RegisterCommand("select", new SelectPortCommand());
+        CommandHandler.RegisterCommand("send", new SendDataCommand());
+        CommandHandler.RegisterCommand("close", new ClosePortCommand());
+        CommandHandler.RegisterCommand("open", new OpenPortCommand());
+        CommandHandler.RegisterCommand("info", new PortInfoCommand());
+        CommandHandler.RegisterCommand("output", new OutputDataCommand());
     }
 }
