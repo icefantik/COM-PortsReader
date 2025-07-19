@@ -1,7 +1,6 @@
 ﻿using COM_PortsReader.Commands;
 using System.Globalization;
 using System.IO.Ports;
-using System.Text.Json;
 
 namespace COM_PortsReader;
 

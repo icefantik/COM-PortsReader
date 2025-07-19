@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO.Ports;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO.Ports;
 
 namespace COM_PortsReader.Commands;
 
 internal class SelectPortCommand : ICommand
 {
-    public string Description => Localizer.GetString("Description command select COM-port [number/name]");
+    public string Description => Localizer.GetString("Description command select");
 
     public void Execute(string[] args)
     {
@@ -23,7 +18,7 @@ internal class SelectPortCommand : ICommand
         if (Array.Exists(SerialPort.GetPortNames(), p => p == portName))
         {
             Program.selectedPort = new SerialPort(portName);
-            Console.WriteLine();
+            Console.WriteLine(Localizer.GetString("Selected port"));
         }
         else
         {
