@@ -11,7 +11,7 @@
   "Description command close": "Responsible for closing the selected COM port, if it is open, with the output of the operation status",
   "Description command open": "Opens the selected COM port for data transfer if it was previously selected and not open",
   "Description command info": "Displays basic information about the selected COM port, including its status (open/closed) and current settings (baud rate, data bits) if the port was previously selected",
-  "Description command output data": "Output data from com port",
+  "Description command output data": "Output a data line from the com port",
   "Selected port": "Selected port: ",
   "Don't select com-port": "Don't select name com-port",
   "Port don't find": "Port don't find",
