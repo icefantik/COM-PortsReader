@@ -11,3 +11,5 @@ List of commands with a description:
 7) open - Opens the selected COM port for data transfer if it was previously selected and not open;
 8) info - Displays basic information about the selected COM port, including its status (open/closed) and current settings (baud rate, data bits) if the port was previously selected;
 9) output - Output a data line from the com port. (In the future, it is planned to output data until the enter button is pressed.);
+
+The functionality of sending and reading data is not implemented
