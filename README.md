@@ -10,4 +10,4 @@ List of commands with a description:
 6) close - Responsible for closing the selected COM port, if it is open, with the output of the operation status;
 7) open - Opens the selected COM port for data transfer if it was previously selected and not open;
 8) info - Displays basic information about the selected COM port, including its status (open/closed) and current settings (baud rate, data bits) if the port was previously selected;
-9) output - 
+9) output - Outputting a data line from the com port. (In the future, it is planned to output data until the enter button is pressed.);
