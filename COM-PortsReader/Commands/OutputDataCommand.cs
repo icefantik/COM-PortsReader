@@ -14,11 +14,18 @@ internal class OutputDataCommand : ICommand
             return;
         }
 
-        Program.selectedPort.DataReceived += (sender, e) =>
+        try
         {
-            SerialPort port = (SerialPort)sender;
-            string data = port.ReadExisting();
-            Console.WriteLine($"[{DateTime.Now:HH:mm:ss}]: {data}");
-        };
+            while (Program.selectedPort.BytesToRead > 0)
+            {
+                string data1 = Program.selectedPort.ReadLine();
+                Console.WriteLine($"[{DateTime.Now:HH:mm:ss}]: {data1}");
+            }
+        }
+        catch (TimeoutException) { }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
 }

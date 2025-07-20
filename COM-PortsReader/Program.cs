@@ -29,7 +29,7 @@ internal class Program
         {
             Console.Write(enterString);
             var input = Console.ReadLine()?.Trim().Split(' '); // taking command and parameters
-            if (input![0] == "") break;
+            if (input![0] == "") continue;
             CommandHandler.Execute(input!);
         }
     }

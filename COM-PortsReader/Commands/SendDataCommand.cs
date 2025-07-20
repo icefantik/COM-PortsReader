@@ -24,8 +24,23 @@ internal class SendDataCommand : ICommand
             return ;
         }
 
-        var data = string.Join(" ", args);
-        Program.selectedPort?.WriteLine(data);
-        Console.WriteLine(Localizer.GetString("Data sent"));
+        using (var port = Program.selectedPort)
+        {
+            try
+            {
+                port.WriteTimeout = 2000;
+                var data = string.Join(" ", args) + "\r\n";
+                port.Write(data);
+                Console.WriteLine(Localizer.GetString("Data sent"));
+
+                port.ReadTimeout = 2000;
+                string response = port.ReadLine();
+                Console.WriteLine(response);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
